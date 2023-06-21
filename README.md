@@ -1,11 +1,10 @@
 
 # Sentiment Analysis of Tweets regarding Technology and Innovation in the UAE
 
-A project which was an assignment for our Text Analytics course @ Heriot Watt Uni. This project looks at Tweets in order to gain insights into people's views on the current state of technology, the innovations, and technological advancements made in the UAE.
+This project was an assignment for our Text Analytics course @ Heriot Watt University. It looks at tweets in order to gain insights into people's views on the current state of technology, the innovations, and technological advancements made in the UAE.
 
 ## Motivation
-
-Motivate your research question or business problem. Clearly explain which problem is solved.
+Sentiments from Twitter could be useful for businesses and government entities.
 
 ## Method and results
 
@@ -21,39 +20,26 @@ The standard NLP workflow is abided by. What was done in each step of the workfl
 
 # Results
 
-The best performing pipeline was 
+The best performing pipeline consisted of lemmatization for the normalization of tweets, N-gram range 1 to 6 for text representation, and decision tree for classifiation, resulting in weighted prec and recall of .85 and weighted F1 of .84.
 
-
-## Repository overview
-
-Provide an overview of the directory structure and files, for example:
-
-├── README.md
-├── data
-├── gen
-│   ├── analysis
-│   ├── data-preparation
-│   └── paper
-└── src
-    ├── analysis
-    ├── data-preparation
-    └── paper
 
 ## Libraries Used
+Tweepy Vader TextBlob SkLearn NLTK Numpy Pandas Gensim FastText MatPlotLib PyLDAvis
 
 ## Running instructions
 
-Explain to potential users how to run/replicate your workflow. If necessary, touch upon the required input data, which secret credentials are required (and how to obtain them), which software tools are needed to run the workflow (including links to the installation instructions), and how to run the workflow.
+A Twitter Developer account will have to be created in order to retrieve authentication keys to scrape tweets. 
 
-
-## More resources
-
-Point interested users to any related literature and/or documentation.
+To run the project, simply fork it, plug in the authentication credentials from your the Twitter Dev account into the 'Scraping Tweets' section and run the notebook.
 
 
 ## About
-Contributors: 
+Contributors: Alora Tabuco, Bhavika Kaliya, Andrea Nabua
 
 
 Task Distribution:
-
+| Member| Tasks |
+|---|---|
+|Bhavika | Data Cleaning and Preprocessing, Logistic Regression, Visualization |,
+|Alora|  Data Labelling and Cleaning, FastText, Decision Trees and Conclusions |,
+|Andrea| Project Overview, Tweet Scraping, Text Representation|
